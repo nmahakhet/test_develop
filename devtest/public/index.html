@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: ["../src/**/*.{vue,js,jsx,ts,tsx}"],
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#2E53A3",
+              },
+              secondary: {
+                DEFAULT: "#FF0000",
+              },
+              info: {
+                DEFAULT: "#307DF1",
+              },
+              success: {
+                DEFAULT: "#2EC577",
+              },
+              error: {
+                DEFAULT: "#D9263B",
+              },
+              warning: {
+                DEFAULT: "#FCA239",
+              },
+              gray: {
+                DEFAULT: "#A5ACB2",
+                1: "#FBFBFB",
+              },
+              border: {
+                DEFAULT: "#F1EFEF",
+              },
+              white: {
+                DEFAULT: "#FFFFFF",
+              },
+              black: {
+                DEFAULT: "#000000",
+              },
+            },
+            boxShadow: {
+              DEFAULT: "0px 0px 10px rgba(116, 123, 131, 0.1)",
+            }
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

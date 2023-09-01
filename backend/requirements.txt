@@ -1,0 +1,6 @@
+mysql-connector-python
+uvicorn
+fastapi
+pydantic==1.8.2; python_full_version >= "3.6.1"
+alembic
+sqlalchemy==1.4.22; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.6.0")
